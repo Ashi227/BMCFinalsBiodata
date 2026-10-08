@@ -31,9 +31,7 @@ class BiodataPage extends StatefulWidget {
 }
 
 class _BiodataPageState extends State<BiodataPage> {
-  // =========================
   // CONTROLLERS
-  // =========================
 
   final nameController = TextEditingController();
   final maritalStatusController = TextEditingController();
@@ -64,15 +62,11 @@ class _BiodataPageState extends State<BiodataPage> {
 
   final certificatesController = TextEditingController();
 
-  // =========================
   // SUBMITTED DATA
-  // =========================
 
   Map<String, String>? submittedData;
 
-  // =========================
   // SUBMIT
-  // =========================
 
   void submitBiodata() {
     setState(() {
@@ -115,9 +109,7 @@ class _BiodataPageState extends State<BiodataPage> {
     );
   }
 
-  // =========================
   // CLEAR
-  // =========================
 
   void clearForm() {
     final controllers = [
@@ -190,9 +182,7 @@ class _BiodataPageState extends State<BiodataPage> {
     super.dispose();
   }
 
-  // =========================
   // INPUT FIELD
-  // =========================
 
   Widget inputField(
     String label,
@@ -214,9 +204,7 @@ class _BiodataPageState extends State<BiodataPage> {
     );
   }
 
-  // =========================
   // SECTION
-  // =========================
 
   Widget section(String title, List<Widget> children) {
     return Card(
@@ -254,9 +242,7 @@ class _BiodataPageState extends State<BiodataPage> {
     );
   }
 
-  // =========================
   // DISPLAY SUBMITTED DATA
-  // =========================
 
   Widget displaySection(String title, List<MapEntry<String, String>> data) {
     return section(
@@ -424,9 +410,7 @@ class _BiodataPageState extends State<BiodataPage> {
     );
   }
 
-  // =========================
   // BUILD
-  // =========================
 
   @override
   Widget build(BuildContext context) {
